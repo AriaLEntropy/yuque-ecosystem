@@ -58,6 +58,7 @@
 
 .stepContent {
   flex: 1;
+  min-width: 0;
 }
 
 .stepTitle {
@@ -85,6 +86,8 @@
   color: var(--color-text);
   overflow-x: auto;
   white-space: pre;
+  max-width: 100%;
+  word-break: break-all;
 }
 
 .codeComment {
@@ -104,10 +107,26 @@
 
 @media (max-width: 640px) {
   .section {
-    padding: 60px 20px;
+    padding: 60px 16px;
+  }
+  .step {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .stepTitle {
+    font-size: 15px;
+  }
+  .stepDesc {
+    font-size: 13px;
   }
   .codeBlock {
-    font-size: 12px;
-    padding: 12px 16px;
+    font-size: 11px;
+    padding: 12px 14px;
+    border-radius: 8px;
+  }
+  .divider {
+    margin-left: 0;
+    width: 24px;
+    height: 1px;
   }
 }
