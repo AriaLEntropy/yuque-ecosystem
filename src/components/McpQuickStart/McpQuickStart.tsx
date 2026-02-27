@@ -42,40 +42,32 @@ function McpQuickStart() {
         选择你的 MCP 客户端，一键接入语雀 AI 能力。支持所有主流编辑器和 AI 工具。
       </p>
 
-      {/* Prerequisites */}
+      {/* Prerequisites - inline chips */}
       <div className={styles.prerequisites}>
-        <div className={styles.prereqTitle}>📋 前置条件</div>
+        <span className={styles.prereqTitle}>前置条件:</span>
         <div className={styles.prereqList}>
-          <div className={styles.prereqItem}>
+          <span className={styles.prereqItem}>
             <span className={styles.prereqIcon}>✓</span>
-            <span>
-              Node.js 18+（
-              <a
-                href="https://nodejs.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.link}
-              >
-                下载
-              </a>
-              ）
-            </span>
-          </div>
-          <div className={styles.prereqItem}>
+            <a
+              href="https://nodejs.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
+              Node.js 18+
+            </a>
+          </span>
+          <span className={styles.prereqItem}>
             <span className={styles.prereqIcon}>✓</span>
-            <span>
-              语雀 API Token（
-              <a
-                href="https://www.yuque.com/settings/tokens"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.link}
-              >
-                前往获取
-              </a>
-              ）
-            </span>
-          </div>
+            <a
+              href="https://www.yuque.com/settings/tokens"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
+              语雀 API Token
+            </a>
+          </span>
         </div>
       </div>
 
