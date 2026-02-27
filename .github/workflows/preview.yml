@@ -28,7 +28,7 @@ jobs:
         if: github.event.action != 'closed'
         run: |
           npm ci
-          VITE_BASE=/yuque-ecosystem/ npm run build          
+          VITE_BASE=/yuque-ecosystem/pr-preview/pr-${{ github.event.number }}/ npm run build          
 
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
